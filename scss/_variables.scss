@@ -1,0 +1,39 @@
+// Colors
+$background-color: hsl(0, 0%, 100%);
+$green-button: hsl(192, 37%, 48%);
+$purple-button: hsl(268, 34%, 53%);
+$heading-color: hsl(240, 21%, 20%);
+$p-color: hsl(240, 10%, 57%);
+$green-button-hover: hsl(192, 54%, 64%);
+$purple-button-hover: hsl(268, 100%, 86%);
+
+// Font-sizes
+$font-size-normal: 16px;
+$font-size-normal-l: 18px;
+$font-size-h2: 32px;
+$font-size-h2-l: 40px;
+$font-size-h1: 40px;
+$font-size-h1-l: 64px;
+
+// Line-height
+$line-height-h1: 44px;
+$line-height-h1-l: 64px;
+$line-height-h2: 36px;
+$line-height-h2-l: 44px;
+$line-height-p: 26px;
+
+// font-weight
+$font-weight-black: 900;
+$font-weight-medium: 500;
+
+// Variables
+$border-radius: 29px;
+
+// Mixins
+@mixin button {
+  border-radius: 29px;
+  padding: 2rem 4rem;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}

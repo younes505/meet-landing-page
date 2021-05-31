@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+  background-color: $background-color;
+}
+
+a.green-button {
+  @include button;
+  background-color: $green-button;
+
+  &:hover {
+    background-color: $green-button-hover;
+  }
+}
+
+a.purple-button {
+  @include button;
+  background-color: $purple-button;
+
+  &:hover {
+    background-color: $purple-button-hover;
+  }
+}
+
+h1 {
+  font-size: $font-size-h1;
+  color: $heading-color;
+  line-height: 44px;
+  font-weight: $font-weight-black;
+
+  @include respond-to("large") {
+    font-size: $font-size-h1-l;
+    color: $heading-color;
+    line-height: $line-height-h1-l;
+  }
+}
+
+h2 {
+  font-size: $font-size-h2;
+  color: $heading-color;
+  line-height: $line-height-h2;
+  font-weight: $font-weight-black;
+
+  @include respond-to("large") {
+    font-size: $font-size-h2-l;
+    color: $heading-color;
+    line-height: $line-height-h2-l;
+  }
+}
+
+p {
+  font-size: $font-size-normal;
+  color: $p-color;
+  line-height: $line-height-p;
+  font-weight: $font-weight-medium;
+
+  @include respond-to("large") {
+    font-size: $font-size-normal-l;
+    color: $p-color;
+    line-height: $line-height-p;
+  }
+}
